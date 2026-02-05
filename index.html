@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page Moderna</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <h1 class="logo">MinhaMarca</h1>
+    <button id="darkToggle">🌙</button>
+  </div>
+</header>
+
+<section class="hero fade">
+  <div class="container">
+    <h2>Soluções modernas para seu negócio</h2>
+    <p>Design, performance e experiência do usuário</p>
+    <button class="btn-primary">Começar agora</button>
+  </div>
+</section>
+
+<section class="features container fade">
+  <div class="card">🚀 Performance</div>
+  <div class="card">🎨 Design moderno</div>
+  <div class="card">🔒 Segurança</div>
+</section>
+
+<section class="about fade">
+  <div class="container">
+    <h3>Sobre</h3>
+    <p>Projeto desenvolvido com HTML, CSS e JavaScript puro.</p>
+  </div>
+</section>
+
+<section class="contact fade">
+  <div class="container">
+    <h3>Contato</h3>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Nome" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="message" placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+      <p id="formStatus"></p>
+    </form>
+  </div>
+</section>
+
+<section class="weather fade">
+  <div class="container">
+    <h3>Clima agora 🌤️</h3>
+    <p id="weatherInfo">Carregando...</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 - MinhaMarca</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

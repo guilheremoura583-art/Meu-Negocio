@@ -1,0 +1,158 @@
+:root {
+  --bg: #f5f7fa;
+  --text: #333;
+  --card: #ffffff;
+  --primary: #6c63ff;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --card: #1e1e1e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header {
+  background: var(--card);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#darkToggle {
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.btn-primary {
+  margin-top: 25px;
+  padding: 14px 35px;
+  border-radius: 30px;
+  border: none;
+  background: #fff;
+  color: #764ba2;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.features {
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: var(--card);
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-12px) rotate(1deg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.about, .contact, .weather {
+  padding: 80px 0;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+#formStatus {
+  margin-top: 10px;
+}
+
+.footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* animação */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* responsivo */
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+}
